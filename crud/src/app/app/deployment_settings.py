@@ -12,7 +12,7 @@ CSRF_TRUSTED_ORIGINS = ['https://'+os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r&u9i$^(ie$^_*nutxrrsfhg^$68^in=k)@8p157tl#5rd!foq'
+SECRET_KEY = os.environ.get('SECRET_KEY')#generate it in render
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # for production
