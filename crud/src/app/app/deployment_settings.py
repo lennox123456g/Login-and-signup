@@ -27,7 +27,7 @@ DEBUG = False # for production
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # 👈 Add this line
-     'whitenoise.middleware.WhiteNoiseMiddleware',#add the whitenoise middleware
+    'whitenoise.middleware.WhiteNoiseMiddleware',#add the whitenoise middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
