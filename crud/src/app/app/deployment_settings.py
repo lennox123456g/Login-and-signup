@@ -54,16 +54,9 @@ STORAGES = {
 
 }
 
-'''IF USING POSTGRES OR OTHER 
-    'NAME': 'auth_system',
-    'USER': 'postgres',
-    'PASSWORD': 'depends',
-    'HOST': 'localhost',
 
+#loggers
 
-'''
-
-#DJOSER
 
 
 
@@ -80,7 +73,7 @@ AUTH_USER_MODEL = 'appsot.UserAccount'  # Remove the comma at the end
 #added
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
-    'https://render-deploy-tutorial-reactjs-code.onrender.com'
+    ''
 ]
 
 #Rest Framework
