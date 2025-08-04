@@ -6,7 +6,9 @@ import sys
 def main():
     """Run administrative tasks."""
     # ✅ Fix the path for when manage.py is in Backend/
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'crud', 'src', 'app'))
+    # Add the correct path - we need to add 'crud/src' to the Python path
+    # so that 'app' module can be found
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'crud', 'src'))
 
     
     settings_module = 'app.deployment_settings' if 'RENDER_EXTERNAL_HOSTNAME' in os.environ else 'app.settings'
