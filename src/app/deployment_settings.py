@@ -73,7 +73,7 @@ AUTH_USER_MODEL = 'appsot.UserAccount'  # Remove the comma at the end
 #added
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
-    'https://render-deploy-tutorial-reactjs-code.onrender.com'
+    'https://login-and-signup-reactfrontend.onrender.com'
 ]
 
 #Rest Framework
